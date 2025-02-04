@@ -1,7 +1,6 @@
 IMPLEMENTATION 
  
-This project was implemented using Java(TM) SE Development Kit 17.0.3.1(64 bit),  in Apache  
-Netbeans IDE 14. An advantage of JDK 17 is that it is an LTS version. 
+This project was implemented using Java(TM) SE Development Kit 17.0.3.1(64 bit),  in Apache Netbeans IDE 14.
  
 Programs in the Smart e-Library System Software Package:
 

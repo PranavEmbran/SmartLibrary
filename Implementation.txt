@@ -1,0 +1,66 @@
+IMPLEMENTATION 
+ 
+This project was implemented using Java(TM) SE Development Kit 17.0.3.1(64 bit),  in Apache  
+Netbeans IDE 14. An advantage of JDK 17 is that it is an LTS version. 
+ 
+Programs in the Smart e-Library System Software Package:
+
+Non-GUI programs: 
+
+SmartLibrary 
+This Non-GUI java program contains the Main class of the software package, i.e., the software 
+package starts its execution from here. The Login class is called from this program by which the 
+Login window GUI gets available. The DueDateNotify class is also called from this program by 
+which due date alert email notifications are sent. 
+
+Connect 
+This Non-GUI java program contains the public class Connect which is used in several parts of the 
+project for establishing a connection with the database with JDBC.
+  
+EmailUtil 
+This Non-GUI java program contains the public class EmailUtil which is used in several parts of the 
+project for sending email with different Subjects, Bodies, to-addresses.
+   
+BookAvailMail 
+This Non-GUI java program contains the public class BookAvailMail whose instance is used in the 
+BookIssue program to send email to library members whose id is entered in the notification 
+preference table (bookavailmail table).  This program uses an instance of the EmailUtil class.
+ 
+DueDateNotify 
+This Non-GUI java program contains the public class DueDateNotify whose instance is used in the 
+SmartLibrary program to send email to library members who should be returning a book issued to 
+them in less than one day.  This program uses an instance of the EmailUtil class. 
+ 
+GenresPie 
+This Non-GUI java program contains the public class GenresPie. This program on execution 
+produces the Genres Pie chart showing the Genre distribution in the book collection.
+ 
+AOIPie 
+This Non-GUI java program contains the public class AOIPie. This program on execution produces 
+the AOI Pie chart showing the comparison of Areas of interest among library users. 
+
+GUI Programs: 
+Login, MainWindow, Users, DataManagement, DataVisualsation, Books, Members, BookIssue, 
+Genres, Authors, Publishers, Languages, BookAvailNotify are the programs in the application 
+responsible for the design and working of the Graphical User Interfaces. 
+ 
+Other project files:
+  
+pom.xml 
+A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that 
+contains information about the project and configuration details used by Maven to build the project. 
+It contains default values for most projects. 
+
+nbactions.xml 
+The nbactions.xml file is used by Netbeans to call custom Maven goals. In this file we can add custom 
+maven run configuration for the maven project. 
+
+Dependencies/ .jar files 
+The Smart e-Library project uses the Maven build automation tool for adding required dependencies 
+to the project.  
+The dependencies added in this project using Maven are: 
+o mysql-connector-java 
+o javax.mail 
+o xchart 
+o javafx-controls 
+o xchart-demo 
